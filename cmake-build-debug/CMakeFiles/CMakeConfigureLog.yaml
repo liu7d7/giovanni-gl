@@ -1,0 +1,588 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.22621 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/bin/gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is GNU, found in:
+        C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/3.26.0-rc6/CompilerIdC/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/3.26.0-rc6/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jwlkl6"
+      binary: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jwlkl6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jwlkl6
+        
+        Run Build Command(s):C:/dev/build/ninja/ninja.exe -v cmTC_9bf51 && [1/2] "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe"   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_9bf51.dir/CMakeCCompilerABI.c.obj -c C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-11.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_9bf51.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9bf51.dir/'
+         C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1.exe -quiet -v -iprefix C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_9bf51.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o C:\\Users\\richard may clarkson\\AppData\\Local\\Temp\\ccWMapnk.s
+        GNU C17 (GCC) version 11.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include"
+        ignoring nonexistent directory "/win/include"
+        ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../include"
+        ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"
+        ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include
+         C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include
+         C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed
+         C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        GNU C17 (GCC) version 11.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 23424b72d090e8b977a96775bde79257
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_9bf51.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9bf51.dir/'
+         as -v -o CMakeFiles/cmTC_9bf51.dir/CMakeCCompilerABI.c.obj C:\\Users\\richard may clarkson\\AppData\\Local\\Temp\\ccWMapnk.s
+        GNU assembler version 2.37 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.37
+        COMPILER_PATH=C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../\x0d
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_9bf51.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9bf51.dir/CMakeCCompilerABI.c.'\x0d
+        [2/2] cmd.exe /C "cd . && "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe"  -v CMakeFiles/cmTC_9bf51.dir/CMakeCCompilerABI.c.obj -o cmTC_9bf51.exe -Wl,--out-implib,libcmTC_9bf51.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        Using built-in specs.
+        COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe
+        COLLECT_LTO_WRAPPER=C:/PROGRA~1/JETBRA~1/CLion\\ 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-11.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.2.0 (GCC) 
+        COMPILER_PATH=C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9bf51.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9bf51.'
+         C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_9bf51.exe C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. CMakeFiles/cmTC_9bf51.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_9bf51.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o\x0d
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9bf51.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9bf51.'\x0d
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include]
+          add: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include]
+          add: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed]
+          add: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include] ==> [C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include]
+        collapse include dir [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include] ==> [C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/include]
+        collapse include dir [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed] ==> [C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed]
+        collapse include dir [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include] ==> [C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/x86_64-w64-mingw32/include]
+        implicit include dirs: [C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include;C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/include;C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed;C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jwlkl6]
+        ignore line: []
+        ignore line: [Run Build Command(s):C:/dev/build/ninja/ninja.exe -v cmTC_9bf51 && [1/2] "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe"   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_9bf51.dir/CMakeCCompilerABI.c.obj -c C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-11.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_9bf51.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9bf51.dir/']
+        ignore line: [ C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1.exe -quiet -v -iprefix C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_9bf51.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o C:\\Users\\richard may clarkson\\AppData\\Local\\Temp\\ccWMapnk.s]
+        ignore line: [GNU C17 (GCC) version 11.2.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include"]
+        ignore line: [ignoring nonexistent directory "/win/include"]
+        ignore line: [ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../include"]
+        ignore line: [ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include]
+        ignore line: [ C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include]
+        ignore line: [ C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed]
+        ignore line: [ C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (GCC) version 11.2.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 23424b72d090e8b977a96775bde79257]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_9bf51.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9bf51.dir/']
+        ignore line: [ as -v -o CMakeFiles/cmTC_9bf51.dir/CMakeCCompilerABI.c.obj C:\\Users\\richard may clarkson\\AppData\\Local\\Temp\\ccWMapnk.s]
+        ignore line: [GNU assembler version 2.37 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.37]
+        ignore line: [COMPILER_PATH=C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../\x0d]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_9bf51.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9bf51.dir/CMakeCCompilerABI.c.'\x0d]
+        ignore line: [[2/2] cmd.exe /C "cd . && "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe"  -v CMakeFiles/cmTC_9bf51.dir/CMakeCCompilerABI.c.obj -o cmTC_9bf51.exe -Wl --out-implib libcmTC_9bf51.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/PROGRA~1/JETBRA~1/CLion\\ 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-11.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9bf51.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9bf51.']
+        ignore line: [ C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_9bf51.exe C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. CMakeFiles/cmTC_9bf51.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_9bf51.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o\x0d]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9bf51.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9bf51.'\x0d]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jleiu9"
+      binary: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jleiu9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jleiu9
+        
+        Run Build Command(s):C:/dev/build/ninja/ninja.exe -v cmTC_e5885 && [1/2] "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\g++.exe"   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_e5885.dir/CMakeCXXCompilerABI.cpp.obj -c C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\g++.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-11.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_e5885.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e5885.dir/'
+         C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1plus.exe -quiet -v -iprefix C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e5885.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o C:\\Users\\richard may clarkson\\AppData\\Local\\Temp\\ccjF7kTd.s
+        GNU C++17 (GCC) version 11.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"
+        ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"
+        ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"
+        ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include"
+        ignoring nonexistent directory "/win/include"
+        ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../include"
+        ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"
+        ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++
+         C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32
+         C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward
+         C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include
+         C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include
+         C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed
+         C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        GNU C++17 (GCC) version 11.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 916242a6eadede3a42d72bc0142b939f
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_e5885.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e5885.dir/'
+         as -v -o CMakeFiles/cmTC_e5885.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\richard may clarkson\\AppData\\Local\\Temp\\ccjF7kTd.s
+        GNU assembler version 2.37 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.37
+        COMPILER_PATH=C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../\x0d
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_e5885.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e5885.dir/CMakeCXXCompilerABI.cpp.'\x0d
+        [2/2] cmd.exe /C "cd . && "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\g++.exe"  -v CMakeFiles/cmTC_e5885.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_e5885.exe -Wl,--out-implib,libcmTC_e5885.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        Using built-in specs.
+        COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\g++.exe
+        COLLECT_LTO_WRAPPER=C:/PROGRA~1/JETBRA~1/CLion\\ 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-11.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.2.0 (GCC) 
+        COMPILER_PATH=C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/;C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e5885.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e5885.'
+         C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_e5885.exe C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. CMakeFiles/cmTC_e5885.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_e5885.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o\x0d
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e5885.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e5885.'\x0d
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++]
+          add: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32]
+          add: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward]
+          add: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include]
+          add: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include]
+          add: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed]
+          add: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++] ==> [C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++]
+        collapse include dir [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32] ==> [C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32]
+        collapse include dir [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward] ==> [C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward]
+        collapse include dir [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include] ==> [C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include]
+        collapse include dir [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include] ==> [C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/include]
+        collapse include dir [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed] ==> [C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed]
+        collapse include dir [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include] ==> [C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/x86_64-w64-mingw32/include]
+        implicit include dirs: [C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++;C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32;C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward;C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include;C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/include;C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed;C:/Program Files/JetBrains/CLion 2022.3.1/bin/mingw/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jleiu9]
+        ignore line: []
+        ignore line: [Run Build Command(s):C:/dev/build/ninja/ninja.exe -v cmTC_e5885 && [1/2] "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\g++.exe"   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_e5885.dir/CMakeCXXCompilerABI.cpp.obj -c C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\g++.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-11.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_e5885.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e5885.dir/']
+        ignore line: [ C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/cc1plus.exe -quiet -v -iprefix C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/ -D_REENTRANT C:/dev/build/cmake/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e5885.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o C:\\Users\\richard may clarkson\\AppData\\Local\\Temp\\ccjF7kTd.s]
+        ignore line: [GNU C++17 (GCC) version 11.2.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"]
+        ignore line: [ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"]
+        ignore line: [ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include"]
+        ignore line: [ignoring nonexistent directory "/win/include"]
+        ignore line: [ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../include"]
+        ignore line: [ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++]
+        ignore line: [ C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32]
+        ignore line: [ C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward]
+        ignore line: [ C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include]
+        ignore line: [ C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include]
+        ignore line: [ C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed]
+        ignore line: [ C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (GCC) version 11.2.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 916242a6eadede3a42d72bc0142b939f]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_e5885.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e5885.dir/']
+        ignore line: [ as -v -o CMakeFiles/cmTC_e5885.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\richard may clarkson\\AppData\\Local\\Temp\\ccjF7kTd.s]
+        ignore line: [GNU assembler version 2.37 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.37]
+        ignore line: [COMPILER_PATH=C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../\x0d]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_e5885.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e5885.dir/CMakeCXXCompilerABI.cpp.'\x0d]
+        ignore line: [[2/2] cmd.exe /C "cd . && "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\g++.exe"  -v CMakeFiles/cmTC_e5885.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_e5885.exe -Wl --out-implib libcmTC_e5885.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\g++.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/PROGRA~1/JETBRA~1/CLion\\ 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-11.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts=yes --enable-libstdcxx-time=yes --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e5885.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e5885.']
+        ignore line: [ C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/11.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_e5885.exe C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtbegin.o -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0 -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../lib -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib -LC:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../.. CMakeFiles/cmTC_e5885.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_e5885.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/PROGRA~1/JETBRA~1/CLion 2022.3.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/crtend.o\x0d]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e5885.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e5885.'\x0d]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "libs/glfw/CMakeLists.txt:62 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-orgu2d"
+      binary: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-orgu2d"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/libs/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-orgu2d
+        
+        Run Build Command(s):C:/dev/build/ninja/ninja.exe -v cmTC_9ecc4 && [1/2] "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe" -DCMAKE_HAVE_LIBC_PTHREAD  -fdiagnostics-color=always -o CMakeFiles/cmTC_9ecc4.dir/src.c.obj -c "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-orgu2d/src.c"
+        [2/2] cmd.exe /C "cd . && "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe"   CMakeFiles/cmTC_9ecc4.dir/src.c.obj -o cmTC_9ecc4.exe -Wl,--out-implib,libcmTC_9ecc4.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "libs/glfw/CMakeLists.txt:111 (check_include_file)"
+    checks:
+      - "Looking for dinput.h"
+    directories:
+      source: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-db8fnb"
+      binary: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-db8fnb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/libs/glfw/CMake/modules"
+    buildResult:
+      variable: "DINPUT_H_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-db8fnb
+        
+        Run Build Command(s):C:/dev/build/ninja/ninja.exe -v cmTC_c2971 && [1/2] "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe"   -fdiagnostics-color=always -o CMakeFiles/cmTC_c2971.dir/CheckIncludeFile.c.obj -c "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-db8fnb/CheckIncludeFile.c"
+        [2/2] cmd.exe /C "cd . && "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe"   CMakeFiles/cmTC_c2971.dir/CheckIncludeFile.c.obj -o cmTC_c2971.exe -Wl,--out-implib,libcmTC_c2971.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "libs/glfw/CMakeLists.txt:112 (check_include_file)"
+    checks:
+      - "Looking for xinput.h"
+    directories:
+      source: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fta6yf"
+      binary: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fta6yf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/libs/glfw/CMake/modules"
+    buildResult:
+      variable: "XINPUT_H_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fta6yf
+        
+        Run Build Command(s):C:/dev/build/ninja/ninja.exe -v cmTC_0d6a3 && [1/2] "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe"   -fdiagnostics-color=always -o CMakeFiles/cmTC_0d6a3.dir/CheckIncludeFile.c.obj -c "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fta6yf/CheckIncludeFile.c"
+        [2/2] cmd.exe /C "cd . && "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe"   CMakeFiles/cmTC_0d6a3.dir/CheckIncludeFile.c.obj -o cmTC_0d6a3.exe -Wl,--out-implib,libcmTC_0d6a3.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "libs/glfw/CMakeLists.txt:122 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test _GLFW_HAS_DEP"
+    directories:
+      source: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-m90b30"
+      binary: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-m90b30"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/libs/glfw/CMake/modules"
+    buildResult:
+      variable: "_GLFW_HAS_DEP"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-m90b30
+        
+        Run Build Command(s):C:/dev/build/ninja/ninja.exe -v cmTC_10bbf && [1/2] "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe" -D_GLFW_HAS_DEP  -Wl,--nxcompat -fdiagnostics-color=always -o CMakeFiles/cmTC_10bbf.dir/src.c.obj -c "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-m90b30/src.c"
+        [2/2] cmd.exe /C "cd . && "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe" -Wl,--nxcompat  CMakeFiles/cmTC_10bbf.dir/src.c.obj -o cmTC_10bbf.exe -Wl,--out-implib,libcmTC_10bbf.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "libs/glfw/CMakeLists.txt:129 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test _GLFW_HAS_ASLR"
+    directories:
+      source: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2g7tkz"
+      binary: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2g7tkz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/libs/glfw/CMake/modules"
+    buildResult:
+      variable: "_GLFW_HAS_ASLR"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2g7tkz
+        
+        Run Build Command(s):C:/dev/build/ninja/ninja.exe -v cmTC_593ef && [1/2] "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe" -D_GLFW_HAS_ASLR  -Wl,--dynamicbase -fdiagnostics-color=always -o CMakeFiles/cmTC_593ef.dir/src.c.obj -c "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2g7tkz/src.c"
+        [2/2] cmd.exe /C "cd . && "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe" -Wl,--dynamicbase  CMakeFiles/cmTC_593ef.dir/src.c.obj -o cmTC_593ef.exe -Wl,--out-implib,libcmTC_593ef.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/dev/build/cmake/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "libs/glfw/CMakeLists.txt:136 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test _GLFW_HAS_64ASLR"
+    directories:
+      source: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-atz95o"
+      binary: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-atz95o"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/richard may clarkson/CLionProjects/opengl-potd/libs/glfw/CMake/modules"
+    buildResult:
+      variable: "_GLFW_HAS_64ASLR"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-atz95o
+        
+        Run Build Command(s):C:/dev/build/ninja/ninja.exe -v cmTC_7a4f2 && [1/2] "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe" -D_GLFW_HAS_64ASLR  -Wl,--high-entropy-va -fdiagnostics-color=always -o CMakeFiles/cmTC_7a4f2.dir/src.c.obj -c "C:/Users/richard may clarkson/CLionProjects/opengl-potd/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-atz95o/src.c"
+        [2/2] cmd.exe /C "cd . && "C:\\PROGRA~1\\JETBRA~1\\CLion 2022.3.1\\bin\\mingw\\bin\\gcc.exe" -Wl,--high-entropy-va  CMakeFiles/cmTC_7a4f2.dir/src.c.obj -o cmTC_7a4f2.exe -Wl,--out-implib,libcmTC_7a4f2.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+...
