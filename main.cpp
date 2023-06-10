@@ -1,3 +1,11 @@
+// Welcome to Giovanni GL!
+//
+// I, your interviewer Giovanni, challenge you to find and fix all the bugs in the following
+// OpenGL program.
+//
+// Without getting this working, you're not getting past this stage of the interview process,
+// young man!
+
 #include <cstdio>
 #include <stdexcept>
 #include "glfw3.h"
@@ -7,18 +15,16 @@
 using namespace glm;
 
 int width = 1152, height = 720;
-bool init = false;
 uint vao = -1;
 uint vbo = -1;
 uint shader = -1;
-int loc = -1;
+int u_time_loc = -1;
 float data[] =
   {
-    0.5, -0.29  /* 1.1 */, 1.0, 0.0, 0.0 /* 1.2 */,
-    -0.5, -0.29 /* 2.1 */, 0.0, 1.0, 0.0 /* 2.2 */,
-    0.0, 0.58   /* 3.1 */, 0.0, 0.0, 1.0 /* 3.2 */
+    +0.50, -0.29 /* 1.1 */, 1.0, 0.0, 0.0 /* 1.2 */,
+    -0.50, -0.29 /* 2.1 */, 0.0, 1.0, 0.0 /* 2.2 */,
+    +0.00, +0.58 /* 3.1 */, 0.0, 0.0, 1.0 /* 3.2 */,
   };
-const int N = 16;
 
 const char* vert_src_fmt =
 R"(
@@ -29,7 +35,7 @@ layout(location=1) in vec3 color;
 
 out vec4 v_color;
 
-uniform float time;
+uniform float u_time;
 
 mat2 rotate(float angle) {
   float c = cos(angle);
@@ -40,8 +46,8 @@ mat2 rotate(float angle) {
 void main() {
   v_color = vec4(color, 1.0);
   vec2 pos = pos;
-  pos = rotate(time) * pos;
-  pos.x /= %f;
+  pos = rotate(u_time) * pos;
+  pos.x *= %f /* aspect ratio */;
   gl_Position = vec4(pos, 0.0, 1.0);
 }
 )";
@@ -59,76 +65,77 @@ void main() {
 }
 )";
 
-void loop() {
-  if (!init) {
-    glCreateVertexArrays(1, &vao);
-    glCreateBuffers(1, &vbo);
+void init() {
+  glEnable(GL_MULTISAMPLE);
 
-    glVertexArrayVertexBuffer(vao, 0, vbo, 0, 5 * sizeof(float));
+  glCreateVertexArrays(1, &vao);
+  glCreateBuffers(1, &vbo);
 
-    glEnableVertexArrayAttrib(vao, 0);
-    glEnableVertexArrayAttrib(vao, 1);
+  glVertexArrayVertexBuffer(vao, 0, vbo, 0, 5 * sizeof(float));
 
-    glVertexArrayAttribFormat(vao, 0, 2, GL_FLOAT, false, 0 * sizeof(float));
-    glVertexArrayAttribFormat(vao, 1, 3, GL_FLOAT, false, 2 * sizeof(float));
+  glEnableVertexArrayAttrib(vao, 0);
+  glEnableVertexArrayAttrib(vao, 1);
 
-    glVertexArrayAttribBinding(vao, 0, 0);
-    glVertexArrayAttribBinding(vao, 1, 0);
+  glVertexArrayAttribFormat(vao, 0, 2, GL_FLOAT, false, 0 * sizeof(float));
+  glVertexArrayAttribFormat(vao, 1, 3, GL_FLOAT, false, 2 * sizeof(float));
 
-    glNamedBufferData(vbo, (long)(N * sizeof(float)), data, GL_STATIC_DRAW);
+  glVertexArrayAttribBinding(vao, 0, 0);
+  glVertexArrayAttribBinding(vao, 1, 0);
 
-    uint vsh, fsh;
-    vsh = glCreateShader(GL_VERTEX_SHADER);
-    fsh = glCreateShader(GL_FRAGMENT_SHADER);
-    shader = glCreateProgram();
+  glNamedBufferData(vbo, int(sizeof(data)), data, GL_STATIC_DRAW);
 
-    float asp = (float) width / (float) height;
+  uint vsh, fsh;
+  vsh = glCreateShader(GL_VERTEX_SHADER);
+  fsh = glCreateShader(GL_FRAGMENT_SHADER);
+  shader = glCreateProgram();
 
-    char* vert_src = new char[1024];
+  float asp = (float) width / (float) height;
 
-    std::snprintf(vert_src, 1024, vert_src_fmt, asp);
+  char* vert_src = new char[1024];
 
-    glShaderSource(vsh, 1, &vert_src, nullptr);
-    glShaderSource(fsh, 1, &frag_src, nullptr);
+  std::snprintf(vert_src, 1024, vert_src_fmt, asp);
 
-    glCompileShader(vsh);
-    int status;
-    glGetShaderiv(vsh, GL_COMPILE_STATUS, &status);
-    if (status != GL_TRUE) {
-      char buffer[512];
-      glGetShaderInfoLog(vsh, 512, nullptr, buffer);
-      throw std::runtime_error(buffer);
-    }
+  glShaderSource(vsh, 1, &vert_src, nullptr);
+  glShaderSource(fsh, 1, &frag_src, nullptr);
 
-    glCompileShader(fsh);
-    glGetShaderiv(fsh, GL_COMPILE_STATUS, &status);
-    if (status != GL_TRUE) {
-      char buffer[512];
-      glGetShaderInfoLog(fsh, 512, nullptr, buffer);
-      throw std::runtime_error(buffer);
-    }
-
-    glAttachShader(shader, vsh);
-    glAttachShader(shader, fsh);
-
-    glLinkProgram(shader);
-    glGetProgramiv(shader, GL_LINK_STATUS, &status);
-    if (status != GL_TRUE) {
-      char buffer[512];
-      glGetProgramInfoLog(shader, 512, nullptr, buffer);
-      throw std::runtime_error(buffer);
-    }
-
-    loc = glGetUniformLocation(shader, "time");
-    init = true;
+  glCompileShader(vsh);
+  int status;
+  glGetShaderiv(vsh, GL_COMPILE_STATUS, &status);
+  if (status != GL_TRUE) {
+    char buffer[512];
+    glGetShaderInfoLog(vsh, 512, nullptr, buffer);
+    throw std::runtime_error(buffer);
   }
 
-  glClear(GL_COLOR_BUFFER_BIT);
+  glCompileShader(fsh);
+  glGetShaderiv(fsh, GL_COMPILE_STATUS, &status);
+  if (status != GL_TRUE) {
+    char buffer[512];
+    glGetShaderInfoLog(fsh, 512, nullptr, buffer);
+    throw std::runtime_error(buffer);
+  }
+
+  glAttachShader(shader, vsh);
+  glAttachShader(shader, fsh);
+
+  glLinkProgram(shader);
+  glGetProgramiv(shader, GL_LINK_STATUS, &status);
+  if (status != GL_TRUE) {
+    char buffer[512];
+    glGetProgramInfoLog(shader, 512, nullptr, buffer);
+    throw std::runtime_error(buffer);
+  }
+
+  u_time_loc = glGetUniformLocation(shader, "u_time");
+}
+
+void loop() {
+  glClear(GL_COLOR);
   glUseProgram(shader);
-  glUniform1f(loc, glfwGetTime());
+  glUniform1f(u_time_loc, float(glfwGetTime()));
   glBindVertexArray(vao);
   glBindBuffer(vbo, GL_ARRAY_BUFFER);
-  glDrawArrays(GL_TRIANGLES, 0, 3);
+  glDrawArrays(GL_TRIANGLES, 0, 6);
 }
 
 int main() {
@@ -147,7 +154,7 @@ int main() {
     glfwMakeContextCurrent(win);
     if (!gladLoadGLLoader((GLADloadproc) glfwGetProcAddress)) throw std::runtime_error("failed to init GLAD!");
 
-    glEnable(GL_MULTISAMPLE);
+    init();
 
     while (!glfwWindowShouldClose(win)) {
       loop();
